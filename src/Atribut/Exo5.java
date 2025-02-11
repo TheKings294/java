@@ -6,14 +6,4 @@ public class Exo5 {
 
         System.out.println(peugot.getBrand());
     }
-    static class Voiture {
-        private String brand;
-
-        public Voiture(String brand) {
-            this.brand = brand;
-        }
-        public String getBrand() {
-            return brand;
-        }
-    }
 }
