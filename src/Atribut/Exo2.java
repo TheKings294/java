@@ -8,7 +8,4 @@ public class Exo2 {
         maClass.nom = "deuxième test";
         System.out.println(maClass.nom);
     }
-    static class MaClass {
-        public String nom = "test";
-    }
 }
