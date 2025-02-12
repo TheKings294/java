@@ -1,4 +1,6 @@
 package Method;
+import java.util.regex.*;
+import java.util.Optional;
 
 public class Calculatrice {
     private int add(int a, int b) {
@@ -41,6 +43,13 @@ public class Calculatrice {
                 result = div(a, b);
                 break;
         }
+        String str = String.valueOf(result);
+        Pattern pattern = Pattern.compile("^42(?:\\.0)?$");
+
+        Optional.of(pattern.matcher(str).find())
+                .filter(Boolean::booleanValue)
+                .ifPresent(match -> System.out.println("T\'sérieux pas 42 on avait dit"));
+
         return result;
     }
 }
