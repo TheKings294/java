@@ -2,8 +2,7 @@ package Concepts;
 
 public class Exo6 {
     public static void main(String[] args) {
-        Fusee fusee = new Fusee("Elon", 3000000);
-        fusee.lancer();
-        Ariane6Lancement arianne = new Ariane6Lancement("Arianne 6", 50000000);
+        Ariane6 arianne = new Ariane6("Arianne", 500000000);
+        Ariane6Lancement lanceur = new Ariane6Lancement(arianne);
     }
 }
