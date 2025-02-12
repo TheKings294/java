@@ -1,7 +1,5 @@
 package Concepts;
 
-public class Avion {
-    public void decoller() {
-        System.out.println("Avion decoller");
-    }
+public abstract class Avion {
+    public abstract void decoller();
 }
