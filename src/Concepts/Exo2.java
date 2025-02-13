@@ -6,7 +6,9 @@ public class Exo2 {
         Voiture ferrari = new Voiture("F80", "rouge", 100000);
         peugot.setPrix(200);
         System.out.println("Model : " + ferrari.getModele());
+        System.out.println("========================");
         peugot.afficherDetails();
+        System.out.println("========================");
         ferrari.afficherDetails();
     }
 }

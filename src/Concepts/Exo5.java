@@ -9,8 +9,11 @@ public class Exo5 {
         avionDeTransport.decoller();
         avionDeChasse.decoller();
 
+        System.out.println("============Porte Avions==========");
+
         porteAvion.addAvion(new AvionDeChasse());
         porteAvion.addAvion(new AvionDeTransport());
         porteAvion.decollerAvion(1);
+        porteAvion.decollerAvion(0);
     }
 }
